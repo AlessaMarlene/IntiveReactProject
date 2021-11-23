@@ -1,0 +1,49 @@
+.about{
+    width: 50%;
+    background-color: #f5f5f5;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.about h1{
+    color: #55183e;
+}
+
+.about h1, .aboutUs > p{
+    padding-bottom: 20px;
+}
+
+.aboutUs{
+    height: 30%;
+}
+
+.aboutPeople{
+    height: 70%;
+}
+
+.personaItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 1000px){
+    .about{
+        padding: 20px;
+    }
+    .aboutUs{
+        height: 35%;
+    }
+    .aboutPeople{
+        height: 65%;
+    }
+}
+
+@media(max-width: 700px){
+    .about{
+        width: 100%;
+    }
+    .personaItem{
+        display: flex;
+        flex-direction: column;
+    }
+}

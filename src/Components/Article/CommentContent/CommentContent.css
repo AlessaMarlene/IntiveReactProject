@@ -1,0 +1,11 @@
+.commentBox{
+    padding: 15px 0;
+}
+
+.commentBox b{
+    font-size: 0.8em;
+}
+
+.commentBox p{
+    font-size: 1.2em;
+}

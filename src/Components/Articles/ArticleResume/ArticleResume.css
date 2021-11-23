@@ -1,0 +1,24 @@
+.articleResume{
+    padding: 30px 50px 15px 50px;
+    border-bottom: 1px solid #8e1c4d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resumeContent{
+    width: 80%;
+}
+
+.resumeContent > p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.articleLink{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #8e1c4d;
+}

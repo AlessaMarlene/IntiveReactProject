@@ -1,0 +1,7 @@
+.desktopNav{
+    height: fit-content;
+}
+
+.desktopNav > div > span{
+    background-color: #8e1c4d;
+}

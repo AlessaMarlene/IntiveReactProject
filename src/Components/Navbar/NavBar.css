@@ -1,0 +1,20 @@
+.navBar, .pageLinks, .navBar figure, .pageLinks ul{
+    display: flex;
+}
+
+.navBar{
+    padding: 0 20px;
+    height: 15vh;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.navBar figure{
+    flex: 1 1 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navBar figure img{
+    width: 20%;
+}

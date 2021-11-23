@@ -1,0 +1,26 @@
+.articleBanner{
+    background-image: url('../../../assets/brImage.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+}
+
+
+.articleHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.articleContentData{
+    padding: 15px 20px;
+}
+
+.articleHeader h1{
+    font-size: 3em;
+}
+
+.articleContentData p{
+    padding-top: 15px;
+}

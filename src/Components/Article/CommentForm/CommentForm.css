@@ -1,0 +1,7 @@
+.commentForm{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px 0;
+    row-gap: 20px;
+}

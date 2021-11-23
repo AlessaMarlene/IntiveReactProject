@@ -1,0 +1,49 @@
+.logUser, .logButtons{
+    display: flex;
+    align-items: center;
+}
+
+.logUser{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e1c4d;
+    background: linear-gradient(70deg, #55183e, #8e1c4d);
+}
+
+.logButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    width: 50%;
+    height: 60%;
+    border: 2px solid #e7bd51;
+    color: #55183e;
+}
+
+.logButtons p:first-of-type{
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+}
+
+.logButtons p:last-of-type{
+    padding: 10px;
+}
+
+@media(max-width: 1000px){
+    .logButtons{
+        width: 70%;
+    }
+}
+
+@media(max-width: 700px){
+    .logUser{
+        height: 100vh;
+        width: 100%;
+    }
+    .logButtons{
+        height: 80%;
+    }
+}
