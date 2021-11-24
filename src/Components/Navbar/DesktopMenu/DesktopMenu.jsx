@@ -8,14 +8,16 @@ import './DesktopMenu.css';
 const DesktopMenu = () => {
     const pageNames = ['about', 'articles', 'create'];
     const {userInfo, deleteUserInformation} = useContext(BlogContext);
-    const [selectedPage, setSelectedPage] = useState(!userInfo.username ? 'register' : 'about');
+    const [selectedPage, setSelectedPage] = useState(!!userInfo.username ? 'about' : 'register');
 
     const handleChange = (e, newSelectedPage) => {
+        if(newSelectedPage === 'logOut') return;
         setSelectedPage(newSelectedPage);
     }
-
+    
     return(
-        <Tabs className='desktopNav' value={selectedPage} onChange={handleChange}>
+        <Tabs className='desktopNav' value={selectedPage} 
+            onChange={(e, selectedPage) => handleChange(e, selectedPage)}>
             {
                 pageNames.map((name) => 
                 <Tab key={name} 
@@ -25,16 +27,16 @@ const DesktopMenu = () => {
                 component={Link} />)
             }
             {
-                !userInfo.username ? 
+                !!userInfo.username ? 
+                <Tab value='logOut' 
+                label={`Log out ${userInfo.username}`} 
+                to='/logUser' component={Link} 
+                onClick={() => deleteUserInformation()}/>
+                : 
                 <Tab value='register' 
                 label='Register' 
                 to='/logUser' 
                 component={Link}/>
-                : 
-                <Tab value='logOut' 
-                label={`Log out ${userInfo.username}`} 
-                to='/logUser' component={Link} 
-                onClick={deleteUserInformation}/>
             }
         </Tabs>
     );

@@ -7,7 +7,10 @@
     padding: 15px 20px;
 }
 
-
+.commentFormSection{
+    border-top:4px solid #8e1c4d;
+    border-bottom:4px solid #8e1c4d;
+}
 
 .commentsList{
     border-top: 1px solid grey;

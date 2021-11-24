@@ -10,7 +10,11 @@
 }
 
 .about h1, .aboutUs > p{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.aboutUs > p{
+    font-size: 0.9em;
 }
 
 .aboutUs{
@@ -32,6 +36,7 @@
     }
     .aboutUs{
         height: 35%;
+        margin-bottom: 15px;
     }
     .aboutPeople{
         height: 65%;

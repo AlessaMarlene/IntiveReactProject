@@ -15,13 +15,12 @@ const About = () => {
         <div className='about'>
             <div className='aboutUs'>
                 <h1>About Movieland</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti aut excepturi sunt animi odit, laboriosam corrupti ipsam. Tempore porro placeat voluptatem alias vel modi quam a ex aliquam accusamus?
-                </p>
+                <p>Movieland has grown throughout these 3 years to bring the latest most important news, the most anticipated releases and the most specialized information.We want this space to be the source of energy you need to satisfy your appetite for what you like the most, where the latest news from the geek world converge, be it about Cinema, Series, Anime, Comics or other curiosities.</p>     
             </div>
             <div className='aboutPeople'>
                 <h1>The team</h1>
                 <div className='personaItem'>
-                    {employees.map((employee) => <Employee personInfo={employee}/>)}
+                    {employees.map((employee) => <Employee key={employee.name} personInfo={employee}/>)}
                 </div>
             </div>
         </div>

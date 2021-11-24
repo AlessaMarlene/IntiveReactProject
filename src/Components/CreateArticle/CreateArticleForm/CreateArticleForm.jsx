@@ -16,6 +16,7 @@ const CreateArticleForm = ({formData, handleChange, handleSubmit, selectedScore}
             <TextField
             name='body'
             label="Write your review...'"
+            maxRows={10}
             multiline
             value={formData.body} onChange={handleChange}/>
 

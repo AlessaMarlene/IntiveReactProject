@@ -4,6 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.35s;
+}
+
+.articleResume:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 16px 15px -4px rgba(0, 0, 0, 0.21);
 }
 
 .resumeContent{
@@ -21,4 +27,8 @@
     font-size: 1.5em;
     font-weight: 600;
     color: #8e1c4d;
+}
+
+.articleLink:hover{
+    text-decoration: underline;
 }

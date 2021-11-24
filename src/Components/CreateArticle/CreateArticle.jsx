@@ -51,7 +51,7 @@ const CreateArticle = () => {
                 {showError && <p>Article couldn't be created. Try again.</p>}
             </div> :
             <Alert severity="warning">
-                <AlertTitle>Warning</AlertTitle>
+                <AlertTitle>A little reminder...</AlertTitle>
                 You have to <strong>sign in</strong> before posting a new article.
             </Alert>}
         </div>
