@@ -15,7 +15,14 @@ const Articles = () => {
     
     return(
         <div className='articles'>
-            {articlesList.map((article) => <ArticleResume key={article.objectId} id={article.objectId} title={article.Title} resume={article.Body}/>)}
+            {articlesList.map((article) => 
+            
+            <ArticleResume 
+            key={article.objectId} 
+            id={article.objectId} 
+            title={article.Title} 
+            resume={article.Body}
+            score={article.Score}/>)}
         </div>
     );
 }
